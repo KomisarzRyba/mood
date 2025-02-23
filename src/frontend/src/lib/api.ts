@@ -1,6 +1,11 @@
 import axios from "axios";
 
-export type Sentiment = number;
+export type Sentiment =
+  | "Positive"
+  | "Mostly Positive"
+  | "Neutral"
+  | "Mostly Negative"
+  | "Negative";
 
 export const getSentimentFromText = async (
   text: string,

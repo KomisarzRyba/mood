@@ -9,6 +9,7 @@ import {
   FormLabel,
   FormControl,
   FormMessage,
+  FormDescription,
 } from "./ui/form";
 
 type SentimentFormTextProps = {
@@ -22,6 +23,7 @@ export const SentimentFormTextArea: FC<SentimentFormTextProps> = ({ form }) => {
       render={({ field }) => (
         <FormItem>
           <FormLabel>Post text</FormLabel>
+          <FormDescription>Paste the post text here</FormDescription>
           <FormControl>
             <Textarea placeholder="eg. I love my professors!!!" {...field} />
           </FormControl>

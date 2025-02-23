@@ -7,10 +7,10 @@ const queryClient = new QueryClient();
 
 function App() {
   return (
-    <main className="container mx-auto my-12">
+    <main className="w-full h-screen flex flex-col items-center justify-center">
       <QueryClientProvider client={queryClient}>
         <SentimentProvider>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 w-full max-w-2xl">
             <SentimentFormCard />
             <SentimentIndicator />
           </div>
